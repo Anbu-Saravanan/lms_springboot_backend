@@ -26,7 +26,7 @@ public class EnrollmentController {
     private UserRepository userRepository;
 
     // Enroll a student in a course
-    @PostMapping("/create")
+    @PostMapping("/{courseId}/create")
     @PreAuthorize("hasRole('STUDENT')")
     public ResponseEntity<EnrollmentResponseDTO> enrollStudent(
             @PathVariable Long courseId,
