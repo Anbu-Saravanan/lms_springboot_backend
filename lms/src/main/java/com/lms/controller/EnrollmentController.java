@@ -16,7 +16,7 @@ import java.security.Principal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/courses/enrollments")
+@RequestMapping("/api/courses/{courseId}/enrollments")
 public class EnrollmentController {
 
     @Autowired
